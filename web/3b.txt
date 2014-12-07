@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>lab prog3b</title>
+</head>
+<body bgcolor=green>
+<h1>print numbers in reverse order</h1>
+<hr>
+<script type="text/javascript">
+var n,r,res=0;
+function disp(str)
+{
+n=str.value;
+while(n!=0)
+{
+r=n%10;
+n=Math.floor(n/10);
+res=res*10+r;
+}
+alert("reverse of string is :"+res);
+}
+</script>
+<form>
+<input type="text" name="str" size="30">
+<input type="button" value="click" onclick="disp(str)">
+</form>
+</body>
+</html>

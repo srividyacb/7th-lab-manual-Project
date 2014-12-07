@@ -1,0 +1,65 @@
+#include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
+char d1[5],d2[5],d3[5],d4[5];
+char gmatrix[4][8];
+char p1[5],p2[5],p3[5];
+char data[5];
+int encoded[8];
+int con(char x);
+int main()
+{
+int i,j;
+printf("\n prog for haming code implementation encoded\n");
+printf("\n enter 4 data bits\n");
+scanf("%s",data);
+for(i=0;i<4;i++)
+{
+d1[i]=d2[i]=d3[i]=d4[i]='0';
+p1[i]=p2[i]=p3[i]='1';
+}
+printf("------for");
+d1[0]='1';
+d2[1]='1';
+d3[2]='1';
+d4[3]='1';
+p1[0]='0';
+p2[1]='0';
+p3[2]='0';
+printf("%s\n%s\n%s\n%s\n",d1,d2,d3,d4);
+printf("%s\n%s\n%s\n",p1,p2,p3);
+for(i=0;i<4;i++)
+gmatrix[i][0]=p1[i];
+for(i=0;i<4;i++)
+gmatrix[i][1]=p2[i];
+for(i=0;i<4;i++)
+gmatrix[i][2]=p3[i];
+for(i=0;i<4;i++)
+gmatrix[i][3]=d1[i];
+for(i=0;i<4;i++)
+gmatrix[i][4]=d2[i];
+for(i=0;i<4;i++)
+gmatrix[i][5]=d3[i];
+for(i=0;i<4;i++)
+gmatrix[i][6]=d4[i];
+printf("\n generator matrix");
+for(i=0;i<4;i++)
+printf("%s\n",gmatrix[i]);
+for(i=0;i<9;i++)
+for(j=0;j<4;j++)
+encoded[i]=encoded[i]+con(data[j])*con(gmatrix[j][i]);
+puts("encoded");
+for(i=0;i<7;i++)
+{
+encoded[i]=encoded[i]%2;
+printf("%i",encoded[i]);
+}
+puts(" ");
+}
+int con(char x)
+{
+if(x=='1')
+return 1;
+else
+return 0;
+}

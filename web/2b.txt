@@ -1,0 +1,19 @@
+<html>
+<body>
+<head>
+<title>lab prog 2b</title>
+</head>
+<h1>printing numbers and calculating their squares</h1>
+<hr>
+<script type="text/javascript">
+var n,i;
+n=prompt("enter a number","");
+c="NUM square";
+for(i=1;i<=n;i++)
+{
+c=c+"\n"+i+"-->"+" "+i*i+"\n";
+}
+alert(c);
+</script>
+</body>
+</html>

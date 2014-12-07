@@ -1,0 +1,36 @@
+<html>
+<body bgcolor=orange>
+<head>
+<title>vowel program</title>
+</head>
+<script type="text/javascript">
+function disp(str)
+{
+var reg=/^[a-zA-Z]+$/;
+if(!str.value.match(reg))
+{
+alert("enter only alphabet");
+return false;
+}
+var i,b;
+b=str.value;
+for(i=0;i<20;i++)
+{
+if(b[i]=="a"||b[i]=="e"||b[i]=="i"||b[i]=="o"||b[i]=="u")
+{
+alert(b[i]+"is first vowel found in position"+(i+1));
+exit(0);
+}
+}
+if(i>=20)
+alert("vowel not found");
+}
+</script>
+<form>
+<h1>vowel</h1>
+<hr>
+<input type="text"name="str"size="30"maxsize="20">
+<input type="button"value="click"onclick="disp(str)">
+</form>
+</body>
+</html>

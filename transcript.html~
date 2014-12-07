@@ -1,0 +1,108 @@
+﻿<html>
+<head>
+<link href="style1.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.style2 {
+	color: #FFFFFF;
+	font-size: x-large;
+	text-decoration: underline;
+}
+.style9 {
+	font-size: xx-large;
+	font-family: "Colonna MT";
+	letter-spacing: 1pt;
+}
+.style10 {
+	color: #000000;
+	font-size: medium;
+}
+.style11 {
+	text-decoration: none;
+}
+.style12 {
+	color: #FFFFFF;
+	font-size: medium;
+}
+.style13 {
+	color: #FFFFFF;
+}
+.style14 {
+	font-size: medium;
+}
+.style15 {
+	color: #99FF66;
+}
+.style16 {
+	color: #99FF66;
+	font-size: medium;
+}
+</style>
+</head>
+<body>
+<body background="images/best.jpg" ></body>
+<div class="container">
+<div class="header">
+	<h1 class="header" style="text-align: center; color: black; font-family: 'Colonna MT'; font-weight: normal; font-size: xx-large; text-decoration: underline; letter-spacing: 1pt;">
+	COMPUTER SCIENCE AND ENGINEERING</h1>
+	<p class="style9" style="text-align: center; color: black; font-weight: normal; text-decoration: underline;">
+	LAB MANUALS</p></div>
+<div class="left" style="color: #FFFFFF">
+		<ul>
+			<li><a href="about.htm" class="style11"><span class="style12">About</span></a></li>
+			<li><a href="calendar.htm" class="style11"><span class="style12">Calendar</span></a></li>
+			<li style="width: 100px"><a href="timetable.htm" class="style11">
+			<span class="style12">Time Table</span></a></li>
+			<li><a href="lablinks.htm" class="style11"><span class="style12">Links</span></a></li>
+			<li style="width: 118px"><a href="photogallery.htm" class="style11">
+			<span class="style12">Photo Gallery</span></a></li>
+			<li><a href="contact.htm" class="style11"><span class="style12">Contact</span></a></li>
+			<li><a href="transcript.html" class="style11"><span class="style12">Bio-Data</span></a></li>
+			
+		</ul>
+	</div>
+	<!-- End iMenu -->
+	<!-- Begin Left Column -->
+	<div class="content">
+		<h2 class="style2">Bio-Data</h2>
+		<p><span class="style14"><span class="style13">Name: </span>
+		<span class="style15">SRIVIDYA.C</span><span class="style13"><br>
+		USN: </span><span class="style15">4GH08CS005</span><span class="style13"><br>
+		Date Of Birth: </span><span class="style15">26th June.</span><span class="style13"><br>
+		Place Of Birth: </span><span class="style15">Hassan.</span><span class="style13"><br>
+		School: </span><span class="style15">St. Mary&#39;s School Arsikere.</span><span class="style13"><br>
+		Pre-University Course: </span><span class="style15">Jagadguru Shri 
+		Kodimutt College Arsikere.</span><span class="style13"><br>
+		College: </span><span class="style15">Government Engineering College.</span></span><br>
+		<span class="style12">Blood Group:</span> <span class="style16">A +ve</span><span class="style14"><br>
+		<span class="style14"><br>
+		</span><span class="style12">Sports and Games:</span><span class="style16"> 
+		Chess and Throw ball.<br>
+		</span><span class="style12">Hobby:</span><span class="style16"> 
+		Listening songs, watching movies, reading books etc.,<br>
+		</span></p>
+		
+
+		</div>
+	<!-- End Left Column -->
+	<!-- Begin Right Column -->
+	<!-- End Right Column -->
+	<!-- Begin Footer -->
+	<div class="footer" style="width: 99%; height: 32px" align="center">
+		<p><a href="about.htm" class="style11"><span class="style10">About</span></a><span class="style10"> | 
+		</span> <a href="calendar.htm" class="style11"><span class="style10">Calendar</span></a><span class="style10"> |
+		</span>
+		<a href="timetable.htm" class="style11"><span class="style10">Time Table</span></a><span class="style10"> | 
+		</span> <a href="lablinks.htm" class="style11"><span class="style10">Links</span></a><span class="style10"> |
+		</span>
+		<a href="photogallery.htm" class="style11"><span class="style10">Photo Gallery</span></a><span class="style10"> | 
+		</span> <a href="contact.htm" class="style11"><span class="style10">Contact</span></a><span class="style10">&nbsp; 
+		| </span>
+		<a href="transcript.html"><span class="style10">Bio-Data</span></a>
+ </p>
+	</div>
+	<!-- End Footer --></div>
+<!-- End Container -->
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="file1.css"/>
+<title>lab prog1</title>
+</head>
+<body>
+<h1>this header is 36pt</h1>
+<h2>this is header is blue</h2>
+<p>this paragraph has a left margin of 50 pixels</p>
+<table border="4" width="%5">
+<tr>
+<th width="204">name</th>
+<th>email</th>
+<th>ph no</th>
+</tr>
+<tr>
+<td width="204">bhavana</td>
+<td>bhavanagkoushik11@gmail.com</td>
+<td> 8765432109</td>
+</tr>
+<tr>
+<td width="204">sri</td>
+<td>sri.bharadwaj.26@gmail.com</td>
+<td>9876543210</td>
+</tr>
+
+<hr>
+<ol>
+<li>CSE</li>
+<li>ISE</li>
+<li>civil</td>
+</ol>
+<p>
+<span>this is text</span>this is a text<span>this is a text</span>
+</body>
+</html>
+
+css.
+p,table,li,
+{
+font-family:"lucida caligraphy",arial,'sans serif';
+margin_left:10pt;
+}
+p
+{
+word-spacing:5px;
+}
+body
+{
+background-color:rgb(200,255,205);
+}
+p,li,td{
+font-size:75%;
+}
+td
+{
+padding:0.5cm;
+}
+th
+{
+text-align:center;
+font-size:85%;
+}
+h1,h2,hr
+{
+color:#483d8b;
+}
+table
+{
+border-style:outset;
+background-color:rgb(100,255,105);
+}
+li
+{
+list-style-type:lower-roman;
+}
+span
+{
+color:blue;
+background-color:pink;
+font-size:29pt;
+font-style:italic;
+font-weight:bold;
+}

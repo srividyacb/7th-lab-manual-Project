@@ -1,0 +1,39 @@
+﻿div.container
+{
+width:100%;
+margin:0px;
+border:1px solid white;
+line-height:150%;
+}
+div.footer
+{
+padding:1em;
+color:white;
+background-image: url("images/hf.jpg");
+clear:left;
+}
+div.header
+{
+padding:1em;
+color:white;
+background-image: url("images/hf.jpg");
+clear:left;
+}
+h1.header
+{
+padding:0;
+margin:0;
+}
+div.left
+{
+float:left;
+width:160px;
+margin:0;
+padding:1em;
+}
+div.content
+{
+margin-left:190px;
+border-left:1px solid white;
+padding:1em;
+}

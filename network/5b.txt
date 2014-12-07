@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+int gcd(int m,int n)
+{
+if(n==0)
+return(m);
+else
+return(gcd(n,m%n));
+}
+int xymodn(int x,int y,int n)
+{
+int y1,y2;
+if(y==1)
+return(x%n);
+else
+{
+y1=y/2;
+y2=y-y1;
+return((xymodn(x,y1,n)*xymodn(x,y2,n))%n);
+}
+}
+void main()
+{
+int z,p,q,p1_txt,en_txt,dn_txt,d,n,e,i;
+printf("\n enter 2 large prime numbers");
+scanf("%d%d",&p,&q);
+n=p*q;
+z=(p-1)*(q-1);
+for(i=2;i<n;i++)
+if(gcd(i,z)==1)
+{
+e=i;
+break;
+}
+for(d=1;d<=z;d++)
+if((e*d-1)%z==0)
+break;
+printf("\n public key:(%d,%d)\n",e,n);
+printf("\n private key:(%d,%d)\n",d,n);
+printf("\n enter plain text:\n");
+scanf("%d",&p1_txt);
+en_txt=xymodn(p1_txt,e,n);
+p1_txt=xymodn(en_txt,d,n);
+printf("\n encrypted data:%d",en_txt);
+printf("\n decrypted data:%d",p1_txt);
+}

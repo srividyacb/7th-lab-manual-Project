@@ -1,0 +1,42 @@
+#include<stdio.h>
+struct frame
+{
+int fslno;
+char finfo[20];
+};
+struct frame arr[10];
+int n;
+void sort()
+{
+int i,j,ex;
+struct frame temp;
+for(i=0;i<n-1;i++)
+{
+ex=0;
+for(j=0;j<n-i-1;j++)
+if(arr[j].fslno>arr[j+1].fslno)
+{
+temp=arr[j];
+arr[j]=arr[j+1];
+arr[j+1]=temp;
+ex++;
+}
+if(ex==0)break;
+}
+}
+int main()
+{
+int i;
+printf("enter number of frames");
+scanf("%d",&n);
+printf("enter sequence number and frame context");
+for(i=0;i<n;i++)
+scanf("%d%s",&arr[i].fslno,arr[i].finfo);
+sort();
+printf("\n the frames in sequence");
+for(i=0;i<n;i++)
+{
+printf("01111110%d\t%s01111110\n",arr[i].fslno,arr[i].finfo);
+printf("!-----------!\n");
+}
+}
